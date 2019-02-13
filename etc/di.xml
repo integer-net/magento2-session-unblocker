@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Customer\Controller\Section\Load">
+        <plugin name="integernet_session_unblocker" type="IntegerNet\SessionUnblocker\Plugin\SectionLoadControllerPlugin" />
+    </type>
+
+    <type name="IntegerNet\SessionUnblocker\Plugin\SectionLoadControllerPlugin">
+        <arguments>
+            <argument name="reviewSession" xsi:type="object">Magento\Review\Model\Session</argument>
+        </arguments>
+    </type>
+</config>
