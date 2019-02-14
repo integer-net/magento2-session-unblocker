@@ -10,7 +10,12 @@
 
     <type name="IntegerNet\SessionUnblocker\Plugin\SectionLoadControllerPlugin">
         <arguments>
-            <argument name="reviewSession" xsi:type="object">Magento\Review\Model\Session</argument>
+            <argument name="additionalSessions" xsi:type="array">
+                <item name="customerSession" xsi:type="object">Magento\Customer\Model\Session</item>
+                <item name="messageSession" xsi:type="object">Magento\Framework\Message\Session</item>
+                <item name="catalogSession" xsi:type="object">Magento\Catalog\Model\Session</item>
+                <item name="reviewSession" xsi:type="object">Magento\Review\Model\Session</item>
+            </argument>
         </arguments>
     </type>
 </config>

@@ -3,10 +3,8 @@ declare(strict_types=1);
 
 namespace IntegerNet\SessionUnblocker\Plugin;
 
-use \Magento\Framework\Session\Generic as GenericSession;
-use \Magento\Customer\Model\Session as CustomerSession;
-use \Magento\Framework\Message\Session as MessageSession;
-use \Magento\Catalog\Model\Session as CatalogSession;
+use Magento\Framework\Session\Generic as GenericSession;
+use Magento\Framework\Session\SessionManagerInterface;
 
 /**
  * We are writing this plugin to make sure sessions are all loaded before
@@ -25,10 +23,7 @@ class SectionLoadControllerPlugin
 {
     /**
      * @param GenericSession $genericSession
-     * @param CustomerSession $customerSession
-     * @param MessageSession $messageSession
-     * @param CatalogSession $catalogSession
-     * @param GenericSession $reviewSession
+     * @param SessionManagerInterface[] $additionalSessions
      *
      * Disabling 3 PHPCS rules because:
      * 1 - We are well aware that we normally shouldn't call Sessions without
@@ -43,10 +38,7 @@ class SectionLoadControllerPlugin
      */
     public function __construct(
         GenericSession $genericSession,
-        CustomerSession $customerSession,
-        MessageSession $messageSession,
-        CatalogSession $catalogSession,
-        GenericSession $reviewSession //virtualType
+        array $additionalSessions = []
     ) {
         /*
          * This is earliest moment where we can close the session,
