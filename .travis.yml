@@ -42,8 +42,8 @@ cache:
   directories:
     - $HOME/.composer/cache
 before_script: ./.travis/before_script.sh
-script: phpunit -c magento2/dev/tests/$TEST_SUITE --coverage-text --coverage-clover=coverage.clover
+script: phpunit -c magento2/dev/tests/$TEST_SUITE --coverage-text --coverage-clover=/tmp/coverage.clover
 after_script:
   - |
     wget https://scrutinizer-ci.com/ocular.phar
-    php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+    php ocular.phar code-coverage:upload --format=php-clover /tmp/coverage.clover
