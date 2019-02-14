@@ -24,10 +24,15 @@
   ],
   "autoload": {
     "files": [
-      "registration.php"
+      "src/registration.php"
     ],
     "psr-4": {
-      "IntegerNet\\SessionUnblocker\\": ""
+      "IntegerNet\\SessionUnblocker\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "IntegerNet\\SessionUnblocker\\Test\\": "tests/"
     }
   },
   "repositories": [

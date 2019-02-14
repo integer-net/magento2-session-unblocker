@@ -30,7 +30,7 @@ composer require ${COMPOSER_PACKAGE_NAME}:dev-${TRAVIS_BRANCH}\#{$TRAVIS_COMMIT}
 # prepare for test suite
 case $TEST_SUITE in
     integration)
-        cp vendor/$COMPOSER_PACKAGE_NAME/Test/Integration/phpunit.xml.dist dev/tests/integration/phpunit.xml
+        cp vendor/$COMPOSER_PACKAGE_NAME/tests/Integration/phpunit.xml.dist dev/tests/integration/phpunit.xml
 
         cd dev/tests/integration
 
@@ -45,6 +45,6 @@ case $TEST_SUITE in
         cd ../../..
         ;;
     unit)
-        cp vendor/$COMPOSER_PACKAGE_NAME/Test/Unit/phpunit.xml.dist dev/tests/unit/phpunit.xml
+        cp vendor/$COMPOSER_PACKAGE_NAME/tests/Unit/phpunit.xml.dist dev/tests/unit/phpunit.xml
     ;;
 esac

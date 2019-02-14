@@ -5,12 +5,8 @@ namespace IntegerNet\SessionUnblocker\Test\Integration;
 
 use IntegerNet\SessionUnblocker\Plugin\SessionStoragePlugin;
 use IntegerNet\SessionUnblocker\Test\Util\MethodLog;
-use IntegerNet\SessionUnblocker\Test\Util\ProfilerSpy;
 use IntegerNet\SessionUnblocker\Test\Util\SectionLoadActionSpy;
 use IntegerNet\SessionUnblocker\Test\Util\SessionSpy;
-use IntegerNet\SessionUnblocker\Test\Util\SessionSpyCustomer;
-use IntegerNet\SessionUnblocker\Test\Util\SessionSpyMessage;
-use IntegerNet\SessionUnblocker\Test\Util\SessionStorageSpy;
 use Magento\Customer\Controller\Section\Load as LoadAction;
 use Magento\Framework\Session\Generic as GenericSession;
 use Magento\TestFramework\Helper\Bootstrap;

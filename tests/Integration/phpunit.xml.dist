@@ -15,7 +15,7 @@
     <!-- Test suites definition -->
     <testsuites>
         <testsuite name="SessionUnblocker Integration Tests">
-            <directory suffix="Test.php">../../../vendor/integer-net/magento2-session-unblocker/Test/Integration</directory>
+            <directory suffix="Test.php">../../../vendor/integer-net/magento2-session-unblocker/tests/Integration</directory>
         </testsuite>
     </testsuites>
     <!-- Code coverage filters -->
@@ -23,7 +23,7 @@
         <whitelist addUncoveredFilesFromWhiteList="true">
             <directory suffix=".php">../../../vendor/integer-net/magento2-session-unblocker</directory>
             <exclude>
-                <directory>../../../vendor/integer-net/magento2-session-unblocker/Test</directory>
+                <directory>../../../vendor/integer-net/magento2-session-unblocker/tests</directory>
             </exclude>
         </whitelist>
     </filter>
