@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace IntegerNet\SectionsDataSessionUnblocker\Plugin;
+namespace IntegerNet\SessionUnblocker\Plugin;
 
 use \Magento\Framework\Session\Generic as GenericSession;
 use \Magento\Customer\Model\Session as CustomerSession;
