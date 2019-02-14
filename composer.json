@@ -29,5 +29,14 @@
     "psr-4": {
       "IntegerNet\\SessionUnblocker\\": ""
     }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://repo.magento.com/"
+    }
+  ],
+  "require-dev": {
+    "magento/magento-coding-standard": "@dev"
   }
 }
