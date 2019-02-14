@@ -16,6 +16,7 @@ Instead we minimize the lock time by closing the session as soon as we have read
 
 1. Install via composer
     ```
+    composer config repositories.session-unblocker vcs git@github.com:integer-net/magento2-session-unblocker.git
     composer require integer-net/magento2-session-unblocker
     ```
 2. Enable module
