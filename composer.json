@@ -27,12 +27,8 @@
       "src/registration.php"
     ],
     "psr-4": {
+      "IntegerNet\\SessionUnblocker\\Test\\": "tests/",
       "IntegerNet\\SessionUnblocker\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "IntegerNet\\SessionUnblocker\\Test\\": "tests/"
     }
   },
   "repositories": [
