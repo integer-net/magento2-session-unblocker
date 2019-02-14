@@ -8,7 +8,7 @@ use \Magento\Customer\Model\Session as CustomerSession;
 use \Magento\Framework\Message\Session as MessageSession;
 use \Magento\Catalog\Model\Session as CatalogSession;
 
-/*
+/**
  * We are writing this plugin to make sure sessions are all loaded before
  * Magento\Customer\Controller\Section\Load
  *
