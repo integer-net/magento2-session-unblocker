@@ -1,7 +1,6 @@
 {
   "name": "integer-net/magento2-session-unblocker",
   "description": "Module for Magento 2 that prevents session blocking between concurrent AJAX requests",
-  "version": "0.0.1",
   "authors": [
     {
       "name": "Fabian Schmengler",
