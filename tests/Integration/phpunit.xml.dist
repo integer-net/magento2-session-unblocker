@@ -22,6 +22,9 @@
     <filter>
         <whitelist addUncoveredFilesFromWhiteList="true">
             <directory suffix=".php">../../../vendor/integer-net/magento2-session-unblocker/src</directory>
+            <exclude>
+                <file>../../../vendor/integer-net/magento2-session-unblocker/src/registration.php</file>
+            </exclude>
         </whitelist>
     </filter>
     <!-- PHP INI settings and constants definition -->
