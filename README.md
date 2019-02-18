@@ -1,9 +1,11 @@
 # Integer_Net Session Unblocker
 
+[![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
+[![Total Downloads][ico-downloads]][link-downloads]
 
 
 This extension improves the performance of AJAX requests in Magento by reducing session locking, without having to disable locking in the cache backend (e.g. Redis)
@@ -62,15 +64,18 @@ If you discover any security related issues, please email fs@integer-net.de inst
 
 The MIT License (MIT). Please see [License File](LICENSE.txt) for more information.
 
+[ico-version]: https://img.shields.io/packagist/v/integer-net/magento2-session-unblocker.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/integer-net/magento2-session-unblocker/master.svg?style=flat-square
 [ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/integer-net/magento2-session-unblocker.svg?style=flat-square
 [ico-code-quality]: https://img.shields.io/scrutinizer/g/integer-net/magento2-session-unblocker.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/integer-net/magento2-session-unblocker.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/integer-net/magento2-session-unblocker
 [link-travis]: https://travis-ci.org/integer-net/magento2-session-unblocker
 [link-scrutinizer]: https://scrutinizer-ci.com/g/integer-net/magento2-session-unblocker/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/integer-net/magento2-session-unblocker
+[link-downloads]: https://packagist.org/packages/integer-net/magento2-session-unblocker
 [link-author]: https://github.com/wigman
 [link-author2]: https://github.com/schmengler
 [link-contributors]: ../../contributors
