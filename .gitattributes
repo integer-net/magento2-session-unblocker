@@ -3,4 +3,5 @@
 /composer.json export-ignore
 /.travis.yml export-ignore
 /.travis export-ignore
+/tests export-ignore
 /auth.json export-ignore
