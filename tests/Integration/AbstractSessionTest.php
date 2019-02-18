@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace IntegerNet\SessionUnblocker\Test\Integration;
 
 use IntegerNet\SessionUnblocker\Plugin\SessionStoragePlugin;
-use IntegerNet\SessionUnblocker\Test\Util\MethodLog;
+use IntegerNet\SessionUnblocker\MethodLog;
 use IntegerNet\SessionUnblocker\Test\Util\SectionLoadActionSpy;
 use IntegerNet\SessionUnblocker\Test\Util\SessionSpy;
 use Magento\Customer\Controller\Section\Load as LoadAction;

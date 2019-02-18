@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace IntegerNet\SessionUnblocker\Test\Util;
+namespace IntegerNet\SessionUnblocker;
 
 use Magento\TestFramework\Helper\Bootstrap;
 
