@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace IntegerNet\SessionUnblocker\Plugin;
 
-use IntegerNet\SessionUnblocker\Test\Util\MethodLog;
+use IntegerNet\SessionUnblocker\MethodLog;
 use Magento\Framework\Session\Storage;
 use Magento\Framework\Session\StorageInterface;
 
