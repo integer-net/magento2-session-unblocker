@@ -40,7 +40,7 @@ class SectionLoadControllerPlugin
         GenericSession $genericSession,
         array $additionalSessions = []
     ) {
-        /*
+        /**
          * This is earliest moment where we can close the session,
          * after we initialised all sessions we think will be needed
          *
@@ -48,7 +48,23 @@ class SectionLoadControllerPlugin
          * nothing breaks, but the new session-type will open a new session
          * and therefore block other requests
          */
-        $genericSession->writeClose();
+        $hasMessages = 0;
+        foreach ($additionalSessions as $session) {
+            if ($session instanceOf \Magento\Framework\Message\Session){
+                // @param \Magento\Framework\Message\Collection $messageCollection
+                foreach ($session->getData() as $messageCollection){
+                    $hasMessages += count($messageCollection->getItems());
+                }
+            }
+        }
+        /**
+         * We've checked if there were no messages in the current session
+         * because the session then needs to stay open to allow the messages
+         * to be removed after loading them
+        */
+        if ($hasMessages === 0 ) {
+            $genericSession->writeClose();
+        }
     }
 
     //phpcs:ignore MEQP2.Classes.PublicNonInterfaceMethods.PublicMethodFound
