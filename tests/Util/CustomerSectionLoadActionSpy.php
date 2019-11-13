@@ -6,7 +6,7 @@ namespace IntegerNet\SessionUnblocker\Test\Util;
 use IntegerNet\SessionUnblocker\MethodLog;
 use Magento\Customer\Controller\Section\Load;
 
-class SectionLoadActionSpy extends Load
+class CustomerSectionLoadActionSpy extends Load
 {
     public function execute()
     {
