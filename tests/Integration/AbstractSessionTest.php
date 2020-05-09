@@ -5,9 +5,11 @@ namespace IntegerNet\SessionUnblocker\Test\Integration;
 
 use IntegerNet\SessionUnblocker\Plugin\SessionStoragePlugin;
 use IntegerNet\SessionUnblocker\MethodLog;
-use IntegerNet\SessionUnblocker\Test\Util\SectionLoadActionSpy;
+use IntegerNet\SessionUnblocker\Test\Util\BannerAjaxLoadActionSpy;
+use IntegerNet\SessionUnblocker\Test\Util\CustomerSectionLoadActionSpy;
 use IntegerNet\SessionUnblocker\Test\Util\SessionSpy;
-use Magento\Customer\Controller\Section\Load as LoadAction;
+use Magento\Banner\Controller\Ajax\Load as BannerAjaxLoadAction;
+use Magento\Customer\Controller\Section\Load as CustomerSectionLoadAction;
 use Magento\Framework\Session\Generic as GenericSession;
 use Magento\TestFramework\Helper\Bootstrap;
 use Magento\TestFramework\ObjectManager;
@@ -78,8 +80,9 @@ abstract class AbstractSessionTest extends AbstractController
         $this->objectManager->configure(
             [
                 'preferences'               => [
-                    LoadAction::class     => SectionLoadActionSpy::class,
-                    GenericSession::class => SessionSpy::class,
+                    BannerAjaxLoadAction::class      => BannerAjaxLoadActionSpy::class,
+                    CustomerSectionLoadAction::class => CustomerSectionLoadActionSpy::class,
+                    GenericSession::class            => SessionSpy::class,
                 ],
                 SessionStoragePlugin::class => [
                     'arguments' => ['doLogMethods' => true]
