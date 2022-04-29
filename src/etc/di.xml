@@ -18,4 +18,16 @@
             </argument>
         </arguments>
     </type>
+
+    <type name="Magento\Banner\Controller\Ajax\Load">
+        <plugin name="integernet_session_unblocker" type="IntegerNet\SessionUnblocker\Plugin\BannerAjaxLoadControllerPlugin" />
+    </type>
+
+    <type name="IntegerNet\SessionUnblocker\Plugin\BannerAjaxLoadControllerPlugin">
+        <arguments>
+            <argument name="additionalSessions" xsi:type="array">
+                <item name="messageSession" xsi:type="object">Magento\Framework\Message\Session</item>
+            </argument>
+        </arguments>
+    </type>
 </config>
